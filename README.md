@@ -1,1 +1,2 @@
 # drive
+[samah](clinic.html)
