@@ -10,7 +10,7 @@
             .ab{display:block; border-radius:50px;
                 background-image:linear-gradient(rgb(129, 19, 37),pink)}
             ul{display:inline-block;list-style-type:none;
-            border-radius:50px;
+            border-radius:50px; 
            }
             a{text-decoration:none;display:inline-block;
             color:white; padding:10px;
@@ -18,7 +18,7 @@
             li{float:left; }
             a :hover{
                 border:solid 2px white;
-                cursor:pointer;;
+                cursor:pointer;
 
             }
            img{border-radius:50px;}
@@ -68,6 +68,8 @@
         </table>
         </div>
         <footer>
+            <label class="ab">Enter Your Weight</label><input type ="text" id="w">
+            <button value="Result" onClick="result()" >Result </button>
             <nav>
                 <ul>
                     <li>
@@ -82,7 +84,21 @@
 
     </main>
     
+    <script type="text/javascript">
     
+    function result()
+    {
+        var myweight=document.getElementById("w").value;
+        if(myweight<=45) 
+        alert('Very Thin');
+        else if (weight <=70)
+        alert('Medium');
+        else if (weight>70)
+        alert ('Fat');
+
+
+    }
+    </script>
     
     </body>
 </html>
