@@ -70,6 +70,8 @@
         <footer>
             <label class="ab">Enter Your Weight</label><input type ="text" id="w">
             <button value="Result" onClick="result()" >Result </button>
+            
+            <label class="ab">Change Color to</label><input type="text" id ="colo"><button onClick="change()"></button>
             <nav>
                 <ul>
                     <li>
@@ -90,14 +92,27 @@
     {
         var myweight=document.getElementById("w").value;
         if(myweight<=45) 
-        alert('Thin');
+        {
+        r= window.prompt('Result','thin' );
+        alert(r);
+        }
         else  if 
         (myweight>45)
-        {alert ('Fat');}
-        promot('Welcome To Site');
+        {
+    
+        r= window.prompt('Result','fat' );
+        alert (r);
+        }
 
 
     }
+
+    function change(){
+        c=document.getElementById("colo").value;
+        
+    }
+
+
     </script>
     
     </body>
