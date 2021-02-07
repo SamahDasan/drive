@@ -35,7 +35,7 @@
             
         </style>
     </head>
-    <body>
+    <body id="bd">
         <header><h1 style="text-align:center;color:white">Clinic</h1>
         
         
@@ -71,7 +71,8 @@
             <label class="ab">Enter Your Weight</label><input type ="text" id="w">
             <button value="Result" onClick="result()" >Result </button>
             
-            <label class="ab">Change Color to</label><input type="text" id ="colo"><button onClick="change()"></button>
+            <label class="ab">Change Color to</label><input type="text" id ="colo">
+            <button onClick="change()">Change</button>
             <nav>
                 <ul>
                     <li>
@@ -93,15 +94,15 @@
         var myweight=document.getElementById("w").value;
         if(myweight<=45) 
         {
-        r= window.prompt('Result','thin' );
-        alert(r);
+       
+        alert('Thin');
         }
         else  if 
         (myweight>45)
         {
     
-        r= window.prompt('Result','fat' );
-        alert (r);
+        
+        alert ('fat');
         }
 
 
@@ -109,7 +110,7 @@
 
     function change(){
         c=document.getElementById("colo").value;
-        
+        document.getElementById("bd").style.backgroundColor=c;
     }
 
 
