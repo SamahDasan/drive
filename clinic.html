@@ -73,6 +73,8 @@
             
             <label class="ab">Change Color to</label><input type="text" id ="colo">
             <button onClick="change()">Change</button>
+
+            <div id="showimg"></div>
             <nav>
                 <ul>
                     <li>
@@ -113,7 +115,13 @@
         document.getElementById("bd").style.backgroundColor=c;
     }
 
-
+   
+var num=prompt("How Many Images Of pink bunny Do You Want To show "+"??"+" TYPE NUMBER ");
+for (var i =1; i<=num ;i++)
+{document.write('<img src= "https://pixy.org/download/4552330/" style="width:200px;height:200px;">');
+document.write("image"+" "+i);
+}  
+    
     </script>
     
     </body>
