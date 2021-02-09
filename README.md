@@ -1,5 +1,4 @@
 # drive
-# table
 
-[samah](clinic.html)<br><br>
+[samah](clinic.html)
 [img](img.jpg)
