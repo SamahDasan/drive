@@ -1,3 +1,5 @@
 # drive
-[samah](clinic.html)
-[img](img.jpg)
+# table
+
+[samah](https://samahdasan.github.io/clinic.html)
+[img](https://samahdasan.github.io/img.jpg)
