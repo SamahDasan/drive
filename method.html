@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Method </title>
+        
+    </head>
+    <body>
+    <header>
+        <h1>Weight </h1>
+        <label><h1>Enter Your Weight</h1></label>
+        <input type ="text" id="weight"><button id="submitt" onClick="result()">Result</button>
+    </header>
+</body>
+
+<script >
+    function result () {
+        var w=document.getElementById("weight").value;
+        if (isNaN(w))
+        {
+            if (w<=40)
+            alert('thin');
+            else if (w>40 && w <=65 ) 
+            alert('Medium');
+            else if (w>50 && w >65 )
+            alert('Fat');
+        }
+        else
+        {
+               alert('Try To type number value '); 
+        }
+         
+    }
+</script>
+</html>
